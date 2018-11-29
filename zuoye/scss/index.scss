@@ -19,4 +19,24 @@
             font-size: pxTorem(15px);
         }
     }
+    footer {
+        width: 100%;
+        height: pxTorem(44px);
+        background: #FFFFFF;
+        @include box_flex;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        @include align(center);
+        @include justify(center);
+        text-align: center;
+        .iconfont {
+            font-size: pxTorem(15px);
+        }
+        dl {
+            width: 25%;
+        }
+        .active {
+            color: #F68334;
+        }
+    }
 }

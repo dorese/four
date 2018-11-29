@@ -1,0 +1,22 @@
+@import "mixin.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    header {
+        width: 100%;
+        height: pxTorem(44px);
+        background: #F2F2F2;
+        @include box_flex;
+        @include align(center);
+        padding: pxTorem(0px) pxTorem(10px);
+        @include sizing;
+        @include justify(space-between);
+        color: #666666;
+        font-size: pxTorem(13px);
+        .iconfont {
+            font-size: pxTorem(15px);
+        }
+    }
+}
